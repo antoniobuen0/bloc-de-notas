@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '@/data/site.config'
 import TwitterIcon from './icons/TwitterIcon.astro'
-import LinkedinIcon from './icons/linkedinIcon.astro'
+import LinkedinIcon from './icons/LinkedinIcon.astro'
 const message = siteConfig.shareMessage
 
 const URL = Astro.url.href
@@ -19,7 +19,7 @@ const URL = Astro.url.href
 		<li>
 			<a
 				href={`https://www.linkedin.com/shareArticle?mini=true&url=${URL}`}
-				aria-label='Compartir en LinkedIn'><linkedinIcon /></a>
+				aria-label='Compartir en LinkedIn'><LinkedinIcon /></a>
 		</li>
 	</ul>
 </div>
