@@ -1,7 +1,7 @@
 ---
 import { siteConfig } from '@/data/site.config'
-import TwitterColorIcon from './icons/TwitterColorIcon.astro'
-import LinkedinIcon from './icons/x.astro'
+import TwitterColorIcon from './icons/TwitterIcon.astro'
+import LinkedinIcon from './icons/linkedinIcon.astro'
 const message = siteConfig.shareMessage
 
 const URL = Astro.url.href
@@ -13,7 +13,7 @@ const URL = Astro.url.href
 		<li>
 			<a
 				href={`https://twitter.com/intent/tweet?text=${message + ' ' + URL}`}
-				aria-label='Compartir en X'><TwitterColorIcon /></a
+				aria-label='Compartir en X'><TwitterIcon /></a
 			>
 		</li>
 		<li>
